@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .img {
   position: absolute;
 }
 .quizSection {
   position: relative;
 }
-.quizSection p {
+.countryquiz{
   position: absolute;
-  width: 271px;
+  width: 291px;
   height: 54px;
   left: 488px;
   top: 188px;

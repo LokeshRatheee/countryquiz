@@ -1,19 +1,12 @@
 import Image from "next/image";
 import styles from "@/styles/quiz.module.css";
-// import undraw_adventure from "@/public/assets/undraw_adventure_4hum 1.svg"
 
 export default function Quiz() {
   return (
     <div className="container">
-      <Image
-        src="/assets/background.png"
-        alt="My Image"
-        className={styles.img}
-        width="1440"
-        height="1090"
-      />
+    
       <div className={styles.quizSection}>
-        <p>COUNTRY QUIZ</p>
+        <p className={styles.countryquiz}>COUNTRY QUIZ</p>
         <Image
           src="/assets/undrew.svg"
           alt="my image"
