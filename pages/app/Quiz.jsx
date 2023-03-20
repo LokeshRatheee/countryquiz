@@ -12,7 +12,7 @@ import {
 
 export default function Quiz() {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <div className={styles.quizSection}>
         <p id="lokesh" className={`heading ${styles.countryquiz}`}>COUNTRY QUIZ</p>
         <Image
@@ -26,8 +26,7 @@ export default function Quiz() {
         <div className={styles.quizblock}>
           <div>
             <p>Kuala Lumpur is the capital of</p>
-          </div>
-          <ul className={styles.ulLIst}>
+            <ul className={styles.ulLIst}>
             <li
               className={`listiteams optionA ${styles.optionA}`}
               id="optiona"
@@ -108,6 +107,8 @@ export default function Quiz() {
               />
             </li>
           </ul>
+          </div>
+
         </div>
       </div>
     </div>
