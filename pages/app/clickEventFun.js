@@ -2,6 +2,15 @@ function handleClick(value) {
     const options_abcd = document.getElementsByClassName("optionsABCD");
     const cityNames = document.getElementsByClassName("optionNames");
     const listiteams = document.getElementsByClassName("listiteams");
+    const checkicon = document.getElementsByClassName("checkicon");
+    checkicon[0].style.visibility = "hidden";
+    const icon = document.getElementsByClassName("icon");
+      console.log(icon);
+      for (let i = 0; i < icon.length; i++) {
+        // icon[i].style.display = "inline";
+        icon[i].style.visibility = "hidden";
+        i;
+      }
     for (let i = 0; i < options_abcd.length; i++) {
       console.log(options_abcd[i]);
       options_abcd[i].style.color = "#6066D0";
@@ -20,6 +29,7 @@ function handleClick(value) {
       const checkicon = document.getElementsByClassName("checkicon");
       console.log(checkicon);
       checkicon[0].style.display = "inline";
+      checkicon[0].style.visibility = "visible";
 
       const green = document.getElementById("optionb");
       green.style.background = "#60BF88";
@@ -41,6 +51,7 @@ function handleClick(value) {
       const checkicon = document.getElementsByClassName("checkicon");
       console.log(checkicon);
       checkicon[0].style.display = "inline";
+      checkicon[0].style.visibility = "visible";
       const red = document.getElementById(value);
 
       let childElements = red.children;
@@ -69,6 +80,7 @@ function handleClick(value) {
       console.log(icon);
       for (let i = 0; i < icon.length; i++) {
         icon[i].style.display = "inline";
+        icon[i].style.visibility = "visible";
         i;
       }
     }

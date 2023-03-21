@@ -1,315 +1,484 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-.img {
-  position: absolute;
-}
-.quizSection {
-  position: relative;
-}
-.countryquiz {
-  position: absolute;
-  width: 291px;
-  height: 54px;
-  left: 488px;
-  top: 188px;
-  margin: 0;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 54px;
-  /* identical to box height */
-
-  text-transform: uppercase;
-
-  color: #f2f2f2;
-}
-.quizblock {
-  position: absolute;
-  width: 464px;
-  height: 515px;
-  left: 488px;
-  top: 252px;
-
-  background: #ffffff;
-  border-radius: 24px;
-}
-.quizblock p {
-  position: relative;
-  width: 373px;
-  height: 36px;
-  left: 32px;
-  top: 68px;
-  right: 59px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 25px;
-  line-height: 36px;
-  /* identical to box height */
-
-  color: #2f527b;
-}
-.undraw {
-  position: absolute;
-  left: 790px;
-  top: 178px;
-  right: 488px;
-  z-index: 3;
-}
-.ulList {
-  list-style-type: none;
-}
-.optionA {
-  position: absolute;
-  width: 400px;
-  height: 56px;
-  left: 32px;
-  top: 136px;
-  right: 32px;
-  list-style-type: none;
-
-  /* background: #F9A826; */
-  /* border-color: #2f527b; */
-  border-radius: 12px;
-  border: 2px solid rgba(96, 102, 208, 0.8);
-}
-.optionA:hover {
-  background: #f9a826;
-  border: transparent;
-}
-.optionA:hover .optionsABCD,
-.optionA:hover .optionNames {
-  color: white;
-}
-.optionB {
-  position: absolute;
-  width: 400px;
-  height: 56px;
-  left: 32px;
-  top: 217px;
-  right: 32px;
-  list-style-type: none;
-
-  /* background: black; */
-  background: transparent;
-  border-radius: 12px;
-  border: 2px solid rgba(96, 102, 208, 0.8);
-}
-.optionB:hover {
-  background: #f9a826;
-  border: transparent;
-}
-.optionB:hover .optionsABCD,
-.optionB:hover .optionNames {
-  color: white;
-}
-.optionC {
-  position: absolute;
-  width: 400px;
-  height: 56px;
-  left: 32px;
-  top: 304px;
-  right: 32px;
-
-  list-style-type: none;
-  background: transparent;
-  border-radius: 12px;
-  border: 2px solid rgba(96, 102, 208, 0.8);
-}
-.optionC:hover {
-  background: #f9a826;
-  border: transparent;
-}
-.optionC:hover .optionsABCD,
-.optionC:hover .optionNames {
-  color: white;
-}
-.optionD {
-  position: absolute;
-  width: 400px;
-  height: 56px;
-  left: 32px;
-  top: 391px;
-  right: 32px;
-  list-style-type: none;
-
-  background: transparent;
-  border-radius: 12px;
-  border: 2px solid rgba(96, 102, 208, 0.8);
-}
-.optionD:hover {
-  background: #f9a826;
-  border: transparent;
-  color: #ffffff;
-}
-.optionD:hover .optionsABCD,
-.optionD:hover .optionNames {
-  color: white;
-}
-.optionsABCD {
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  left: 19px;
-  right: 362px;
-
-  width: 17px;
-  height: 36px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  color: rgba(96, 102, 208, 0.8);
-  /* identical to box height */
-
-  /* color: #ffffff; */
-}
-.optionsABCD:hover {
-  /* color:white; */
-}
-.optionNames {
-  top: 15px;
-  bottom: 14px;
-  left: 82px;
-  right: 240px;
-  position: absolute;
-  width: 78px;
-  height: 27px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  color: rgba(96, 102, 208, 0.8);
-
-  /* identical to box height */
-
-  /* color: #FFFFFF; */
-}
-
-/* icons */
-.icon {
-  width: 20px;
-  height: 20px;
-  top: 18px;
-  left: 362px;
-  right: 18px;
-  bottom: 18px;
-  position: absolute;
-color: white;
-  background: transparent;
-  border-radius: 12px;
-  display: none;
-}
-.checkicon{
-  width: 20px;
-  height: 20px;
-  top: 18px;
-  left: 362px;
-  right: 18px;
-  bottom: 18px;
-  position: absolute;
-  color: white;
-  background: transparent;
-  border-radius: 12px;
-  display: none;
-}
-
-
-
-
-/* media quary */
-@media only screen and (max-width: 600px) {
-  .countryquiz{
-    text-align: center;
+@media only screen and (min-width: 1200px) {
+  .img {
+    position: absolute;
   }
-  .quizblock{
-
-    top: 250px;
-    /* bottom: 1vh; */
-    margin: auto;
-    left: 50px;
-    width: 80vw;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    right: 50px;
-}
-  
-  .quizblock p{
-    height: 76px;
-    width: 295px;
-    text-align: center;
-    left: 0;
-    right: 0;
+  .quizSection {
+    position: relative;
   }
-  .ulLIst{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .countryquiz {
+    position: absolute;
+    width: 291px;
+    height: 54px;
+    left: 488px;
+    top: 188px;
+    margin: 0;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #f2f2f2;
+  }
+  .quizblock {
+    position: absolute;
+    width: 464px;
+    height: 515px;
+    left: 488px;
+    top: 252px;
+
+    background: #ffffff;
+    border-radius: 24px;
+  }
+  .quizblock p {
+    position: relative;
+    width: 373px;
+    height: 36px;
+    left: 32px;
+    top: 68px;
+    right: 59px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 36px;
+    /* identical to box height */
+
+    color: #2f527b;
+  }
+  .undraw {
+    position: absolute;
+    left: 790px;
+    top: 178px;
+    right: 488px;
+    z-index: 3;
+  }
+  .ulList {
+    list-style-type: none;
   }
   .optionA {
-    margin: auto;
     position: absolute;
-    width: 280px;
+    width: 400px;
+    height: 56px;
+    left: 32px;
+    top: 136px;
+    right: 32px;
+    list-style-type: none;
+
+    /* background: #F9A826; */
+    /* border-color: #2f527b; */
+    border-radius: 12px;
+    border: 2px solid rgba(96, 102, 208, 0.8);
+  }
+  .optionA:hover {
+    background: #f9a826;
+    border: transparent;
+  }
+  .optionA:hover .optionsABCD,
+  .optionA:hover .optionNames {
+    color: white;
+  }
+  .optionB {
+    position: absolute;
+    width: 400px;
     height: 56px;
     left: 32px;
     top: 217px;
     right: 32px;
     list-style-type: none;
-  
-    /* background: #F9A826; */
-    /* border-color: #2f527b; */
+
+    /* background: black; */
+    background: transparent;
     border-radius: 12px;
     border: 2px solid rgba(96, 102, 208, 0.8);
   }
-  .optionB {
-    margin: auto;
+  .optionB:hover {
+    background: #f9a826;
+    border: transparent;
+  }
+  .optionB:hover .optionsABCD,
+  .optionB:hover .optionNames {
+    color: white;
+  }
+  .optionC {
     position: absolute;
-    width: 280px;
+    width: 400px;
     height: 56px;
     left: 32px;
     top: 304px;
     right: 32px;
+
     list-style-type: none;
-  
-    /* background: #F9A826; */
-    /* border-color: #2f527b; */
+    background: transparent;
     border-radius: 12px;
     border: 2px solid rgba(96, 102, 208, 0.8);
   }
-  .optionC {
-    margin: auto;
+  .optionC:hover {
+    background: #f9a826;
+    border: transparent;
+  }
+  .optionC:hover .optionsABCD,
+  .optionC:hover .optionNames {
+    color: white;
+  }
+  .optionD {
     position: absolute;
-    width: 280px;
+    width: 400px;
     height: 56px;
     left: 32px;
     top: 391px;
     right: 32px;
     list-style-type: none;
-  
-    /* background: #F9A826; */
-    /* border-color: #2f527b; */
+
+    background: transparent;
     border-radius: 12px;
     border: 2px solid rgba(96, 102, 208, 0.8);
   }
-  .optionD {
+  .optionD:hover {
+    background: #f9a826;
+    border: transparent;
+    color: #ffffff;
+  }
+  .optionD:hover .optionsABCD,
+  .optionD:hover .optionNames {
+    color: white;
+  }
+  .optionsABCD {
     position: absolute;
-    width: 280px;
-    height: 56px;
-   margin: auto;
-    top : 475px;
-    right: 32px;
-    list-style-type: none;
-  
-    /* background: #F9A826; */
-    /* border-color: #2f527b; */
-    border-radius: 12px;
-    border: 2px solid rgba(96, 102, 208, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 19px;
+    right: 362px;
+
+    width: 17px;
+    height: 36px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(96, 102, 208, 0.8);
+    /* identical to box height */
+
+    /* color: #ffffff; */
   }
- 
+  .optionsABCD:hover {
+    /* color:white; */
+  }
+  .optionNames {
+    top: 15px;
+    bottom: 14px;
+    left: 82px;
+    right: 240px;
+    position: absolute;
+    width: 78px;
+    height: 27px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(96, 102, 208, 0.8);
+
+    /* identical to box height */
+
+    /* color: #FFFFFF; */
+  }
+
+  /* icons */
+  .icon {
+    width: 20px;
+    height: 20px;
+    top: 18px;
+    left: 362px;
+    right: 18px;
+    bottom: 18px;
+    position: absolute;
+    color: white;
+    background: transparent;
+    border-radius: 12px;
+    display: none;
+  }
+  .checkicon {
+    width: 20px;
+    height: 20px;
+    top: 18px;
+    left: 362px;
+    right: 18px;
+    bottom: 18px;
+    position: absolute;
+    color: white;
+    background: transparent;
+    border-radius: 12px;
+    display: none;
+  }
+}
+
+/* media quary */
+@media only screen and (max-width: 600px) {
+  .countryquiz {
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .undraw {
+    display: none;
+  }
+  .ulLIst {
+    padding-top: 30px;
+    display: grid;
+    gap: 30px;
+  }
+  .listiteams {
+    list-style-type: none;
+  }
+  .quizblock {
+    border: 2px solid white;
+    border-radius: 24px;
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    background-color: white;
+  }
+  .quizblock p {
+    color: #6066d0;
+    text-align: center;
+    font-size: x-large;
+    font-family: Poppins;
+    font-weight: 400;
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-weight: 700;
+  }
+  .optionA,
+  .optionB,
+  .optionC,
+  .optionD {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6066d0;
+    border: 2px solid #6066d0;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 14px;
+    font-family: Poppins;
+    font-weight: 500;
+  }
+  .optionD:hover {
+    background: #f9a826;
+    border: transparent;
+    color: #ffffff;
+  }
+  .optionD:hover .optionsABCD,
+  .optionD:hover .optionNames {
+    color: white;
+  }
+  .optionC:hover {
+    background: #f9a826;
+    border: transparent;
+  }
+  .optionC:hover .optionsABCD,
+  .optionC:hover .optionNames {
+    color: white;
+  }
+  .optionB:hover {
+    background: #f9a826;
+    border: transparent;
+  }
+  .optionB:hover .optionsABCD,
+  .optionB:hover .optionNames {
+    color: white;
+  }
+  .optionA:hover {
+    background: #f9a826;
+    border: transparent;
+  }
+  .optionA:hover .optionsABCD,
+  .optionA:hover .optionNames {
+    color: white;
+  }
+  .checkicon,
+  .icon {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-height: 670px) {
+  .countryquiz {
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    margin: 0;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .undraw {
+    display: none;
+  }
+  .ulLIst {
+    padding-top: 0px;
+    display: grid;
+    gap: 30px;
+  }
+  .listiteams {
+    list-style-type: none;
+  }
+  .quizblock {
+    border: 2px solid white;
+    border-radius: 24px;
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+  }
+  .quizblock p {
+    color: #6066d0;
+    text-align: center;
+    font-size: x-large;
+    font-family: Poppins;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 700;
+  }
+  .optionA,
+  .optionB,
+  .optionC,
+  .optionD {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6066d0;
+    border: 2px solid #6066d0;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    font-weight: 400;
+    border-radius: 24px;
+    font-family: Poppins;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .countryquiz {
+    text-align: center;
+    padding-top: 40px;
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 46px;
+    font-weight: 700;
+  }
+  .undraw {
+    /* display: none; */
+    position: relative;
+    left: 530px;
+    /* top: 0px; */
+  }
+  .ulLIst {
+    /* padding-top: 30px; */
+    display: grid;
+    gap: 60px;
+  }
+  .listiteams {
+    list-style-type: none;
+  }
+  .quizblock {
+    border: 2px solid white;
+    border-radius: 24px;
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    margin-top: -72px;
+    /* padding-top: 100px; */
+    background-color: white;
+  }
+  .quizblock p {
+    color: #6066d0;
+    text-align: center;
+    font-size: 35px;
+    font-family: Poppins;
+    font-weight: 400;
+    width: 80%;
+    /* height: 80%; */
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-weight: 900;
+  }
+  .optionA,
+  .optionB,
+  .optionC,
+  .optionD {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6066d0;
+    border: 2px solid #6066d0;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 14px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: large;
+  }
+  .optionD:hover {
+    background: #f9a826;
+    border: transparent;
+    color: #ffffff;
+  }
+  .optionD:hover .optionsABCD,
+  .optionD:hover .optionNames {
+    color: white;
+  }
+  .optionC:hover {
+    background: #f9a826;
+    border: transparent;
+  }
+  .optionC:hover .optionsABCD,
+  .optionC:hover .optionNames {
+    color: white;
+  }
+  .optionB:hover {
+    background: #f9a826;
+    border: transparent;
+  }
+  .optionB:hover .optionsABCD,
+  .optionB:hover .optionNames {
+    color: white;
+  }
+  .optionA:hover {
+    background: #f9a826;
+    border: transparent;
+  }
+  .optionA:hover .optionsABCD,
+  .optionA:hover .optionNames {
+    color: white;
+  }
+  .checkicon,
+  .icon {
+    visibility: hidden;
+  }
 }

@@ -24,7 +24,7 @@ export default function Quiz() {
           quality={100}
         />
         <div className={styles.quizblock}>
-          <div>
+          <div > 
             <p>Kuala Lumpur is the capital of</p>
             <ul className={styles.ulLIst}>
             <li
