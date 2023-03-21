@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
   .img {
     position: absolute;
   }
@@ -377,7 +377,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .countryquiz {
     text-align: center;
     padding-top: 40px;
