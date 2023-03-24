@@ -218,7 +218,7 @@
     border-radius: 12px;
     display: none;
   }
-  #checkIcon{
+  #checkIcon {
     width: 20px;
     height: 20px;
     top: 18px;
@@ -299,12 +299,11 @@
     font-weight: 700;
     /* margin-bottom: 50px; */
   }
-  .optionsABCD{
-    padding-right: 50px ;
-    
+  .optionsABCD {
+    padding-right: 50px;
   }
-  .optionNames{
-    width: 100px;
+  .optionNames {
+    width: 120px;
     /* padding-right: 80px; */
   }
   .optionA,
@@ -360,28 +359,28 @@
   .icon {
     display: none;
   }
- .nextButton{
-  width: 20%;
-  height: 30px;
-  margin: auto;
-  display: block;
+  .nextButton {
+    width: 23%;
+    height: 39px;
+    margin: auto;
+    display: block;
 
-  align-self: end;
-  /* position: absolute; */
-  bottom: 90px;
-  left: 40%;
-  /* font-size: 5px; */
-  color: #ffffff;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  background: #f9a826;
-  box-shadow: 0px 2px 4px rgba(252, 168, 47, 0.4);
-  border-radius: 12px;
-  border: transparent;
-  margin-bottom: 50px;
-  /* display: none; */
- } 
+    align-self: end;
+    /* position: absolute; */
+    bottom: 90px;
+    left: 40%;
+    /* font-size: 5px; */
+    color: #ffffff;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    background: #f9a826;
+    box-shadow: 0px 2px 4px rgba(252, 168, 47, 0.4);
+    border-radius: 12px;
+    border: transparent;
+    margin-bottom: 50px;
+    display: none;
+  }
 }
 
 /* @media only screen and (max-height: 670px) {
@@ -442,29 +441,39 @@
   }
 } */
 
-@media screen and (min-device-width: 490px) and (max-device-width: 768px) {
+@media screen and (min-width: 490px) and (max-width: 1023px) {
   .countryquiz {
     text-align: center;
     padding-top: 40px;
     width: 100%;
-    height: 10vh;
+    /* height: 10vh; */
     margin: 0;
     color: #ffffff;
     font-family: Poppins;
     font-size: 46px;
     font-weight: 700;
-  }
-  .ulLIst {
-    padding-top: 30px;
-    display: grid;
-    gap: 30px;
-    padding-bottom: 30px;
+    /* z-index: 3; */
   }
   .undraw {
     /* display: none; */
     position: relative;
     left: 530px;
+    display: none;
     /* top: 0px; */
+  }
+  .ulLIst {
+    padding-bottom: 50px;
+    display: grid;
+    gap: 60px;
+
+  }
+  .optionsABCD {
+    padding-right: 50px;
+  }
+  .optionNames {
+    width: 80%;
+    text-align: center;
+    /* padding-right: 80px; */
   }
   .listiteams {
     list-style-type: none;
@@ -475,29 +484,24 @@
     width: 80%;
     /* height: 70vh; */
     margin: auto;
+    /* margin-top: -72px; */
+    /* padding-top: 100px; */
     background-color: white;
-    margin-bottom: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 90px;
   }
   .quizblock p {
     color: #6066d0;
     text-align: center;
-    font-size: x-large;
+    font-size: 35px;
     font-family: Poppins;
     font-weight: 400;
     width: 80%;
+    /* height: 80%; */
     margin: auto;
-    padding-top: 50px;
-    /* padding-bottom: 50px; */
-    font-weight: 700;
-    /* margin-bottom: 50px; */
-  }
-  .optionsABCD{
-    padding-right: 200px ;
-    
-  }
-  .optionNames{
-    width: 220px;
-    /* padding-right: 80px; */
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-weight: 900;
   }
   .optionA,
   .optionB,
@@ -509,11 +513,13 @@
     color: #6066d0;
     border: 2px solid #6066d0;
     width: 80%;
+    height: 100%;
     margin: auto;
     padding: 10px;
     border-radius: 14px;
     font-family: Poppins;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: large;
   }
   .optionD:hover {
     background: #f9a826;
@@ -550,28 +556,23 @@
   }
   .checkicon,
   .icon {
-    display: none;
+    /* visibility: hidden; */
   }
-  .nextButton{
-    width: 20%;
-    height: 30px;
-    margin: auto;
+  .nextButton {
+    width: 108px;
+    height: 56px;
     display: block;
-  
-    align-self: end;
     /* position: absolute; */
-    bottom: 90px;
-    left: 40%;
-    /* font-size: 5px; */
+   margin: auto;
+    font-size: 18px;
     color: #ffffff;
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     background: #f9a826;
     box-shadow: 0px 2px 4px rgba(252, 168, 47, 0.4);
     border-radius: 12px;
     border: transparent;
-    margin-bottom: 50px;
-    /* display: none; */
-   } 
+    display: none;
+  }
 }

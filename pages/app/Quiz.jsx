@@ -72,9 +72,6 @@ export default function Quiz() {
   }
   const [check, setcheck] = useState();
   function handleClick(value) {
-
-
-
     // remove pervious mutiple icon on icons
     const iTags = document.getElementsByTagName("i");
 
@@ -83,7 +80,7 @@ export default function Quiz() {
       const iTag = iTags[i];
       iTag.parentNode.removeChild(iTag);
     }
-    
+
     const items = document.getElementsByTagName("i");
     // console.log(xyz);
     for (let i = 0; i < items.length; i++) {
@@ -129,47 +126,47 @@ export default function Quiz() {
       setresult(result + 1);
       console.log(result);
       const screenWidth = window.screen.width;
-    // console.log(`Screen width: ${screenWidth}px`);
-    if(screenWidth < "500"){
-      let icon = document.createElement("i");
+      // console.log(`Screen width: ${screenWidth}px`);
+      if (screenWidth < "500") {
+        let icon = document.createElement("i");
 
-      icon.className = "fa-regular fa-circle-check";
-      // icon.id = "checkIcon";
-      // let check = document.getElementById("checkIcon");
-      console.log(icon);
+        icon.className = "fa-regular fa-circle-check";
+        // icon.id = "checkIcon";
+        // let check = document.getElementById("checkIcon");
+        console.log(icon);
 
-      icon.style.cssText =
-        "padding-left:50px;width:20px;color:white;background:transparent;border-radius:12px;";
-      document.getElementById(value).appendChild(icon);
-      
-    }
-    else if(screenWidth > "489" && screenWidth < "769"){
-      let icon = document.createElement("i");
+        icon.style.cssText =
+          "padding-left:50px;width:20px;color:white;background:transparent;border-radius:12px;";
+        document.getElementById(value).appendChild(icon);
+      } else if (screenWidth > "489" && screenWidth < "1022") {
+        // alert(screenWidth);
+        console.log("asadas");
 
-      icon.className = "fa-regular fa-circle-check";
-      // icon.id = "checkIcon";
-      // let check = document.getElementById("checkIcon");
-      console.log(icon);
+        let icon = document.createElement("i");
 
-      icon.style.cssText =
-        "padding-left:100px;width:20px;color:white;background:transparent;border-radius:12px;";
-      document.getElementById(value).appendChild(icon);
-    }
-    else if(screenWidth > "1023" ){
-      let icon = document.createElement("i");
+        icon.className = "fa-regular fa-circle-check";
+        // icon.id = "checkIcon";
+        // let check = document.getElementById("checkIcon");
+        console.log(icon);
 
-      icon.className = "fa-regular fa-circle-check";
-      // icon.id = "checkIcon";
-      // let check = document.getElementById("checkIcon");
-      console.log(icon);
+        icon.style.cssText =
+          "width:20px;color:white;background:transparent;border-radius:12px;";
+        document.getElementById(value).appendChild(icon);
+      } else if (screenWidth > "1024") {
+        let icon = document.createElement("i");
 
-      icon.style.cssText =
-      "width: 20px;height: 20px;top: 18px;left: 362px;right:18px;bottom: 18px;position: absolute; color: white;background: transparent;border-radius: 12px;"
+        icon.className = "fa-regular fa-circle-check";
+        // icon.id = "checkIcon";
+        // let check = document.getElementById("checkIcon");
+        console.log(icon);
 
-      document.getElementById(value).appendChild(icon);
-    }
-      
-    const green = document.getElementById(value);
+        icon.style.cssText =
+          "width: 20px;height: 20px;top: 18px;left: 362px;right:18px;bottom: 18px;position: absolute; color: white;background: transparent;border-radius: 12px;";
+
+        document.getElementById(value).appendChild(icon);
+      }
+
+      const green = document.getElementById(value);
       green.style.background = "#60BF88";
       green.style.color = "white";
       green.style.border = "transparent";
@@ -186,12 +183,9 @@ export default function Quiz() {
 
       names.style.color = "white";
     } else {
-
       // let icon3 = document.createElement("i");
 
       // icon3.className = "fa-regular fa-circle-check";
-
-      
 
       // icon3.style.cssText =
       //   "width:20px;height:20px;top:18px;left:362px;right:18px;bottom:18px;position:absolute;color:white;background:transparent;border-radius:12px;";
@@ -202,66 +196,57 @@ export default function Quiz() {
       let icon1 = document.createElement("i");
       const screenWidth = window.screen.width;
       // console.log(`Screen width: ${screenWidth}px`);
-      if(screenWidth < "500"){
+      if (screenWidth < "500") {
         icon1.className = "fa-regular fa-circle-xmark";
         icon1.style.cssText =
           "padding-left:50px;width:20px;color:white;background:transparent;border-radius:12px;";
         document.getElementById(value).appendChild(icon1);
 
-      let icon3 = document.createElement("i");
+        let icon3 = document.createElement("i");
 
-      icon3.className = "fa-regular fa-circle-check";
+        icon3.className = "fa-regular fa-circle-check";
 
-      
-
-      icon3.style.cssText =
-      "padding-left:50px;width:20px;color:white;background:transparent;border-radius:12px;";
-      document.getElementById(questions[index].answer).appendChild(icon3);
-
-      }
-      else if(screenWidth > "489" && screenWidth < "769"){
+        icon3.style.cssText =
+          "padding-left:50px;width:20px;color:white;background:transparent;border-radius:12px;";
+        document.getElementById(questions[index].answer).appendChild(icon3);
+      } else if (screenWidth > "489" && screenWidth < "1022") {
         let icon = document.createElement("i");
-  
+
         icon.className = "fa-regular fa-circle-xmark";
         // icon.id = "checkIcon";
         // let check = document.getElementById("checkIcon");
         console.log(icon);
-  
+
         icon.style.cssText =
-          "padding-left:100px;width:20px;color:white;background:transparent;border-radius:12px;";
+          "width:20px;color:white;background:transparent;border-radius:12px;";
         document.getElementById(value).appendChild(icon);
         let icon3 = document.createElement("i");
 
         icon3.className = "fa-regular fa-circle-check";
-  
-        
-  
+
         icon3.style.cssText =
-          "padding-left:100px;width:20px;color:white;background:transparent;border-radius:12px;";
+          "width:20px;color:white;background:transparent;border-radius:12px;";
         document.getElementById(questions[index].answer).appendChild(icon3);
-      }
-      else if (screenWidth > "1023"){
+      } else if (screenWidth > "1023") {
         let icon = document.createElement("i");
-  
+
         icon.className = "fa-regular fa-circle-xmark";
         // icon.id = "checkIcon";
         // let check = document.getElementById("checkIcon");
         console.log(icon);
-  
+
         icon.style.cssText =
-        "width: 20px;height: 20px;top: 18px;left: 362px;right:18px;bottom: 18px;position: absolute; color: white;background: transparent;border-radius: 12px;"
+          "width: 20px;height: 20px;top: 18px;left: 362px;right:18px;bottom: 18px;position: absolute; color: white;background: transparent;border-radius: 12px;";
         document.getElementById(value).appendChild(icon);
         let icon3 = document.createElement("i");
 
         icon3.className = "fa-regular fa-circle-check";
-  
-        
-  
+
         icon3.style.cssText =
-        "width: 20px;height: 20px;top: 18px;left: 362px;right:18px;bottom: 18px;position: absolute; color: white;background: transparent;border-radius: 12px;"
+          "width: 20px;height: 20px;top: 18px;left: 362px;right:18px;bottom: 18px;position: absolute; color: white;background: transparent;border-radius: 12px;";
         document.getElementById(questions[index].answer).appendChild(icon3);
       }
-     
+
       const red = document.getElementById(value);
 
       let childElementsRed = red.children;
