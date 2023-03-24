@@ -115,6 +115,12 @@
 
     color: #1d355d;
   }
+  .correct{
+    padding: 8px;
+    color: #60BF88;
+    font-size: 25px;
+    font-weight: 900;
+  }
 }
 
 /* mobile */
@@ -170,11 +176,17 @@
     border-radius: 12px;
     background: transparent;
   }
-  .tryagaintext{
+  .tryagaintext {
     color: #1d355d;
   }
+  .correct{
+    padding: 8px;
+    color: #60BF88;
+    font-size: 25px;
+    font-weight: 900;
+  }
 }
-@media screen and (min-device-width: 490px ) and (max-device-width: 768px) {
+@media screen and (min-device-width: 490px) and (max-device-width: 768px) {
   .countryquiz {
     text-align: center;
     padding-top: 100px;
@@ -226,7 +238,13 @@
     border-radius: 12px;
     background: transparent;
   }
-  .tryagaintext{
+  .tryagaintext {
     color: #1d355d;
+  }
+  .correct{
+    padding: 8px;
+    color: #60BF88;
+    font-size: 25px;
+    font-weight: 900;
   }
 }

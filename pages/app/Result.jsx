@@ -1,7 +1,14 @@
 import Image from "next/image";
 import styles from "@/styles/result.module.css";
+import Quiz from "./Quiz";
 
-export default function Result() {
+export default function Result(props) {
+  console.log(props);
+  function tryAgain(){
+    console.log("Click");
+    window.location.reload();
+  }
+
   return (
     <>
       <div className="container">
@@ -17,8 +24,11 @@ export default function Result() {
               height="128"
             />
             <p className={styles.results}>Results</p>
-            <p className={styles.resultStatement}>You got 4 correct answers</p>
-            <button type="submit" className={styles.tryagain}>
+            <p className={styles.resultStatement}>
+              You got <span className={styles.correct
+              }>{props.correctAnswer}</span> correct answers
+            </p>
+            <button id="tryAgainButton" onClick={() => tryAgain()} type="submit" className={styles.tryagain}>
               <span
                 className="tryagaintext"
                 style={{
