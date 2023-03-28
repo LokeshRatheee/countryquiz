@@ -4,7 +4,7 @@
     position: absolute;
   }
   .quizSection {
-    position: relative;
+    /* position: relative; */
   }
   .countryquiz {
     position: absolute;
@@ -30,12 +30,17 @@
     height: 559px;
     left: 488px;
     top: 252px;
-
+    /* margin-top: 252px;
+    margin-bottom: 279px; */
     background: #ffffff;
     border-radius: 24px;
+
+    /* margin-left: 448px; 
+    margin-right: 448px;
+   margin-bottom: 1000px; */
   }
   .quizblock p {
-    position: relative;
+    /* position: relative; */
     width: 373px;
     height: 36px;
     left: 32px;
@@ -46,6 +51,9 @@
     font-weight: 900;
     font-size: 25px;
     line-height: 36px;
+    margin-left: 32px;
+    margin-right: 59px;
+    margin-top: 68px;
     /* identical to box height */
 
     color: #2f527b;
@@ -55,100 +63,45 @@
     left: 790px;
     top: 178px;
     right: 488px;
+    /* margin-left: 790px;
+    margin-top: 178px;
+    margin-right: 488px; */
     z-index: 3;
   }
   .ulList {
-    list-style-type: none;
+    display: grid;
+    gap: 25px;
+    margin-top: 31px;
   }
-  .optionA {
-    position: absolute;
+  .options {
+    /* margin-top: 60px; */
     width: 400px;
     height: 56px;
     left: 32px;
     top: 136px;
     right: 32px;
     list-style-type: none;
-
-    /* background: #F9A826; */
-    /* border-color: #2f527b; */
+    margin-left: 32px;
+    margin-right: 32px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
     border-radius: 12px;
     border: 2px solid rgba(96, 102, 208, 0.8);
   }
-  .optionA:hover {
+  .options:hover {
     background: #f9a826;
-    border: transparent;
+    border: 2px solid white;
   }
-  .optionA:hover .optionsABCD,
-  .optionA:hover .optionNames {
+  .options:hover .optionsABCD,
+  .options:hover .optionNames {
     color: white;
   }
-  .optionB {
-    position: absolute;
-    width: 400px;
-    height: 56px;
-    left: 32px;
-    top: 217px;
-    right: 32px;
-    list-style-type: none;
 
-    /* background: black; */
-    background: transparent;
-    border-radius: 12px;
-    border: 2px solid rgba(96, 102, 208, 0.8);
-  }
-  .optionB:hover {
-    background: #f9a826;
-    border: transparent;
-  }
-  .optionB:hover .optionsABCD,
-  .optionB:hover .optionNames {
-    color: white;
-  }
-  .optionC {
-    position: absolute;
-    width: 400px;
-    height: 56px;
-    left: 32px;
-    top: 304px;
-    right: 32px;
-
-    list-style-type: none;
-    background: transparent;
-    border-radius: 12px;
-    border: 2px solid rgba(96, 102, 208, 0.8);
-  }
-  .optionC:hover {
-    background: #f9a826;
-    border: transparent;
-  }
-  .optionC:hover .optionsABCD,
-  .optionC:hover .optionNames {
-    color: white;
-  }
-  .optionD {
-    position: absolute;
-    width: 400px;
-    height: 56px;
-    left: 32px;
-    top: 391px;
-    right: 32px;
-    list-style-type: none;
-
-    background: transparent;
-    border-radius: 12px;
-    border: 2px solid rgba(96, 102, 208, 0.8);
-  }
-  .optionD:hover {
-    background: #f9a826;
-    border: transparent;
-    color: #ffffff;
-  }
-  .optionD:hover .optionsABCD,
-  .optionD:hover .optionNames {
-    color: white;
-  }
+  
   .optionsABCD {
-    position: absolute;
+    /* position: absolute; */
     top: 10px;
     bottom: 10px;
     left: 19px;
@@ -156,6 +109,7 @@
 
     width: 17px;
     height: 36px;
+    margin-left: 10px;
 
     font-family: "Poppins";
     font-style: normal;
@@ -168,17 +122,17 @@
     /* color: #ffffff; */
   }
   .optionsABCD:hover {
-    /* color:white; */
+    color: black;
   }
   .optionNames {
     top: 15px;
     bottom: 14px;
     left: 82px;
     right: 240px;
-    position: absolute;
+    /* position: absolute; */
     width: 78px;
     height: 27px;
-
+    padding-left: 44px;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -268,7 +222,7 @@
   .undraw {
     display: none;
   }
-  .ulLIst {
+  .ulList {
     padding-top: 30px;
     display: grid;
     gap: 30px;
@@ -306,10 +260,7 @@
     width: 120px;
     /* padding-right: 80px; */
   }
-  .optionA,
-  .optionB,
-  .optionC,
-  .optionD {
+  .options{
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
@@ -461,11 +412,10 @@
     display: none;
     /* top: 0px; */
   }
-  .ulLIst {
+  .ulList {
     padding-bottom: 50px;
     display: grid;
     gap: 60px;
-
   }
   .optionsABCD {
     padding-right: 50px;
@@ -503,10 +453,7 @@
     padding-bottom: 50px;
     font-weight: 900;
   }
-  .optionA,
-  .optionB,
-  .optionC,
-  .optionD {
+  .options {
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
@@ -563,7 +510,7 @@
     height: 56px;
     display: block;
     /* position: absolute; */
-   margin: auto;
+    margin: auto;
     font-size: 18px;
     color: #ffffff;
     font-family: "Poppins";
