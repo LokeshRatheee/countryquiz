@@ -7,7 +7,7 @@ export default function handleCLick(value, index, setresult) {
       ? "padding-left:50px;width:20px;color:white;background:transparent;border-radius:12px;"
       : screenWidth > "489" && screenWidth < "1022"
       ? "width:20px;color:white;background:transparent;border-radius:12px;"
-      : "width: 20px;height: 20px;top: 18px;left: 362px;right: 18px;bottom: 18px;position: absolute;color: white;background: transparent;border-radius: 12px;";
+      : "width: 20px;height: 20px;margin-left:202px; color: white;background: transparent;border-radius: 12px;";
   function checkicon(screenWidth) {
     let checkIcon = document.createElement("i");
     checkIcon.className = `fa-regular fa-circle-check`;
