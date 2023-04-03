@@ -16,6 +16,10 @@ export default function Quiz() {
 
   return (
     <div>
+      {/* 
+          //!Alert:- Instead of using value here use any constant like
+          //!        maxquestion. 
+      */}
       {index === 3 ? (
         <Result correctAnswer={result} />
       ) : (

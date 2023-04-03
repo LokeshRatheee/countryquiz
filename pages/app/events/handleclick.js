@@ -1,5 +1,19 @@
 import questions from "../constant/constant";
 
+/*
+  !Alert: 1.) Function is too big try to apply solid principle for making the
+  !       function smaller and readable  
+  !       2.) Try to put the following functions outside the handleCLick functions
+  !           i)   checkicon
+  !           ii)  crossicon
+  !           iii) icons
+  !           iv)  green
+  !            v)  red
+  !           vi)  color
+  !       3.) When selecting a function name try to select verb to be the name of the function
+
+*/
+
 export default function handleCLick(value, index, setresult) {
   const screenWidth = window.screen.width;
   let styleText =
@@ -58,7 +72,6 @@ export default function handleCLick(value, index, setresult) {
     red.style.border = "2px solid white";
     namesRed.style.color = "white";
   }
-
   function color() {
     if (value === questions[index].answer) {
       green();
@@ -94,6 +107,11 @@ export default function handleCLick(value, index, setresult) {
   const listiteams = document.getElementsByClassName("listiteams");
   const icon = document.getElementsByClassName("icon");
 
+  /* 
+    ?TODO: the length of the icon, options_abcd citynames and listitem 
+    ?      are same. These all for loops can be replace with 1 for loop.
+    ?      And try to put them in a function.
+  */
   for (let i = 0; i < icon.length; i++) {
     icon[i].style.visibility = "hidden";
     i;

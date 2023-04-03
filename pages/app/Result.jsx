@@ -6,6 +6,10 @@ export default function Result(props) {
   console.log(props);
   function tryAgain(){
     console.log("Click");
+    /* 
+        ?TODO :- Instead of reloading the window try to rerender the page
+        ?     :- refreshing the page in not best user experience 
+    */
     window.location.reload();
   }
 
@@ -29,6 +33,11 @@ export default function Result(props) {
               }>{props.correctAnswer}</span> correct answers
             </p>
             <button id="tryAgainButton" onClick={() => tryAgain()} type="submit" className={styles.tryagain}>
+               {/* 
+                    //!Alert:- Try to avoid the use of the inline stylesling
+                    //!        Try to kept all the css code in the css file. 
+                */}
+               
               <span
                 className="tryagaintext"
                 style={{
