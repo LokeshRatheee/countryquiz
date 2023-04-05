@@ -8,6 +8,8 @@ import { useState } from "react";
 
 export default function Quiz() {
   // states
+  const limit = questionsSet.length;
+ 
   const [index, setindex] = useState(0);
   const [result, setresult] = useState(0);
 
@@ -20,8 +22,8 @@ export default function Quiz() {
           //!Alert:- Instead of using value here use any constant like
           //!        maxquestion. 
       */}
-      {index === 3 ? (
-        <Result correctAnswer={result} />
+      {index === limit ? (
+        <Result correctAnswers={result} />
       ) : (
         <>
           <div className={styles.container}>

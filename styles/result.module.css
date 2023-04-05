@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
+  .tryagaintext{
+    width: 87px;
+    height: 27px;
+    left: 676px;
+    top: 717px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1d355d;
+  }
   .img {
     position: absolute;
   }
@@ -99,7 +111,7 @@
     border: 2px solid #1d355d;
     border-radius: 12px;
   }
-  .tryagaintext {
+  /* .tryagaintext {
     position: absolute;
     width: 87px;
     height: 27px;
@@ -111,10 +123,10 @@
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;
-    /* identical to box height */
+ 
 
     color: #1d355d;
-  }
+  } */
   .correct{
     padding: 8px;
     color: #60BF88;
@@ -186,8 +198,32 @@
     font-size: 25px;
     font-weight: 900;
   }
+  .tryagaintext{
+    width: 87px;
+    height: 27px;
+    left: 676px;
+    top: 717px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1d355d;
+  }
 }
-@media screen and (min-width: 490px) and (max-width: 1023px) {
+@media screen and (min-width: 490px) and (max-width: 1024px) {
+  .tryagaintext{
+    width: 87px;
+    height: 27px;
+    left: 676px;
+    top: 717px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1d355d;
+  }
   .countryquiz {
     text-align: center;
     padding-top: 100px;

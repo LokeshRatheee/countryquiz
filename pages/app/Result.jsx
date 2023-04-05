@@ -30,7 +30,7 @@ export default function Result(props) {
             <p className={styles.results}>Results</p>
             <p className={styles.resultStatement}>
               You got <span className={styles.correct
-              }>{props.correctAnswer}</span> correct answers
+              }>{props.correctAnswers}</span> correct answers
             </p>
             <button id="tryAgainButton" onClick={() => tryAgain()} type="submit" className={styles.tryagain}>
                {/* 
@@ -39,19 +39,7 @@ export default function Result(props) {
                 */}
                
               <span
-                className="tryagaintext"
-                style={{
-                  width: "87px",
-                  height: "27px",
-                  left: "676px",
-                  top: "717px",
-                  fontFamily: "Poppins",
-                  fontStyle: "normal",
-                  fontWeight: "600",
-                  fontSize: "18px",
-                  lineHeight: "27px",
-                  color: "#1d355d",
-                }}
+                className={styles.tryagaintext}
               >
                 Try again
               </span>
